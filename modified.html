@@ -5,12 +5,20 @@
     <title>Modified by cookie</title>
 </head>
 <body>
-<button id="modify">Modify</button>
+<fieldset>
+    <legend>Modified the value of <a href="index.html" target="other">index.html</a></legend>
+    <button id="increment">Increment</button>
+    <button id="reset">Reset</button>
+</fieldset>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
 <script>
-    $('#modify').click(function () {
+    $('#increment').click(function () {
         $.cookie('val', parseInt($.cookie('val') || 0) + 1);
+    });
+
+    $('#reset').click(function () {
+        $.cookie('val', 0);
     });
 </script>
 </body>
