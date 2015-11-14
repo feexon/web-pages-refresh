@@ -1,3 +1,6 @@
 .idea
 *.iml
-bower_components
+bower_components/*/src
+bower_components/*/*.json
+bower_components/*/*.map
+bower_components/*/*.txt
