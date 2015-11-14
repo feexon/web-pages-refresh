@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<div><label>Last Modified:</label><strong id="val"></strong></div>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script>
+    setInterval(function () {
+        $('#val').html($.cookie('val') || 'undefined');
+    }, 100);
+</script>
+</body>
+</html>

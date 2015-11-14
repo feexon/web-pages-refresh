@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modified by cookie</title>
+</head>
+<body>
+<button id="modify">Modify</button>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+<script>
+    $('#modify').click(function () {
+        $.cookie('val', parseInt($.cookie('val') || 0) + 1);
+    });
+</script>
+</body>
+</html>
